@@ -9,6 +9,7 @@ import photoshopIcon from '../assets/images/icon_photoshop.png';
 import illustratorIcon from '../assets/images/icon_illustrator.png';
 import premiereIcon from '../assets/images/icon_premiere.png';
 import chatGPTIcon from '../assets/images/icon_chatgpt.png';
+import inDesignIcon from '../assets/images/icon_indesign.png';
 import coverCheese from '../assets/images/cheese_scone.png';
 import coverBetterMonday from '../assets/images/better_monday_banner.png';
 import './styles.css';
@@ -109,7 +110,7 @@ function Home() {
               <br />
               기초부터 차곡차곡 다져나가며 성장하는 웹 퍼블리셔입니다.
             </h2>
-            <p>
+            <p className="about-me">
               프론트엔드 개발자로 일하며 화면을 멋지게 구성하는 웹 퍼블리셔
               직업에 푹 빠졌습니다. 생활속 흥미로운 모습을 화면상에 구현하기
               위해 고민합니다. 탄탄한 기술과 근무경험을 활용하여 불가능에서
@@ -132,6 +133,23 @@ function Home() {
                 <div className="date">2026.07.03</div>
                 <div className="detail-info">
                   <div className="history">웹디자인개발기능사 취득</div>
+                  <ul className="list-icon">
+                    <li>
+                      <img src={htmlIcon} alt="html icon image" />
+                    </li>
+                    <li>
+                      <img src={cssIcon} alt="css icon image" />
+                    </li>
+                    <li>
+                      <img src={jsIcon} alt="javascript icon image" />
+                    </li>
+                    <li>
+                      <img src={illustratorIcon} alt="illustrator icon image" />
+                    </li>
+                    <li>
+                      <img src={photoshopIcon} alt="photoshop icon image" />
+                    </li>
+                  </ul>
                   <div className="description">
                     웹 디자인과 프론트엔드 구현에 대한 기본기를 탄탄하게
                     갖추었습니다. UI 설계부터 HTML, CSS, JavaScript를 이용한
@@ -145,6 +163,17 @@ function Home() {
                 <div className="date">2026.06.26</div>
                 <div className="detail-info">
                   <div className="history">컴퓨터그래픽기능사 취득</div>
+                  <ul className="list-icon">
+                    <li>
+                      <img src={inDesignIcon} alt="indesign icon" />
+                    </li>
+                    <li>
+                      <img src={illustratorIcon} alt="illustrator icon image" />
+                    </li>
+                    <li>
+                      <img src={photoshopIcon} alt="photoshop icon image" />
+                    </li>
+                  </ul>
                   <div className="description">
                     Adobe Photoshop과 Illustrator, InDesign을 활용한 그래픽 제작
                     역량을 갖추었으며, 이를 바탕으로 사용성과 심미성을 모두
@@ -209,7 +238,7 @@ function Home() {
           </div>
         </div>
         <div
-          className="brand-identity  box-flex"
+          className="brand-identity  box-flex col-reverse"
           data-aos="fade-left"
           data-aos-duration="3000"
         >
