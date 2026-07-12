@@ -11,6 +11,8 @@ import photoshopIcon from '../assets/images/icon_photoshop.png';
 import illustratorIcon from '../assets/images/icon_illustrator.png';
 import premiereIcon from '../assets/images/icon_premiere.png';
 import chatGPTIcon from '../assets/images/icon_chatgpt.png';
+import coverCheese from '../assets/images/cheese_scone.png';
+import coverBetterMonday from '../assets/images/better_monday_banner.png';
 
 import './styles.css';
 // import required modules
@@ -270,10 +272,7 @@ function Home() {
           <SwiperSlide>
             <div className="swiper-item">
               <div className="swiper-video">
-                <img
-                  src="./assets/better_monday_banner.png"
-                  alt="better monday cover image"
-                />
+                <img src={coverBetterMonday} alt="better monday cover image" />
               </div>
               <div className="swiper-description">
                 <div>
@@ -299,10 +298,7 @@ function Home() {
           <SwiperSlide>
             <div className="swiper-item">
               <div className="swiper-video">
-                <img
-                  src="../images/cheese_scone.png"
-                  alt="cheese scone cover image"
-                />
+                <img src={coverCheese} alt="cheese scone cover image" />
               </div>
               <div className="swiper-description">
                 <div>

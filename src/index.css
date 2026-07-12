@@ -1,6 +1,6 @@
 /* global style css */
 :root {
-  --body-background: url(./images/bg_dreamy_pink.png) no-repeat;
+  --body-background: url(./assets/images/bg_dreamy_pink.png) no-repeat;
   /* --body-background: url(../public/images/bg_dreamy_pink.png) no-repeat; */
   /* public/images */
   --body-color: #0a093f;
@@ -8,7 +8,7 @@
 }
 
 [data-theme='dark'] {
-  --body-background: url(./images/bg_dark_galaxy.jpg) no-repeat;
+  --body-background: url(./assets/images/bg_dark_galaxy.jpg) no-repeat;
   --body-color: #cae3fb;
   --link-color: cyan;
 }
