@@ -327,11 +327,7 @@ function Home() {
       </section>
 
       {/* ---- VIDEO WORKS ---- */}
-      <section
-        id="section-video-project"
-        data-aos="fade-left"
-        data-aos-duration="2000"
-      >
+      <section id="section-video-project">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
