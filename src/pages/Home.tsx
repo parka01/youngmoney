@@ -295,10 +295,7 @@ function Home() {
                 </div>
                 <ul className="list-icon">
                   <li>
-                    <img
-                      src="./src/images/icon_html.png"
-                      alt="html icon image"
-                    />
+                    <img src="../images/icon_html.png" alt="html icon image" />
                   </li>
                   <li>
                     <img src="./src/images/icon_css.png" alt="css icon image" />
@@ -323,7 +320,7 @@ function Home() {
             <div className="swiper-item">
               <div className="swiper-video">
                 <img
-                  src="./src/images/cheese_scone.png"
+                  src="../images/cheese_scone.png"
                   alt="cheese scone cover image"
                 />
               </div>
