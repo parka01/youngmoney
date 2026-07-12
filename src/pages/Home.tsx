@@ -184,7 +184,11 @@ function Home() {
       </section>
 
       {/* ---- SECTION PROJECT ---- */}
-      <section id="section-project">
+      <section
+        id="section-project"
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -329,7 +333,11 @@ function Home() {
       </section>
 
       {/* ---- VIDEO WORKS ---- */}
-      <section id="section-video-project">
+      <section
+        id="section-video-project"
+        data-aos="fade-left"
+        data-aos-duration="3000"
+      >
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
