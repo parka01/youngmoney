@@ -189,6 +189,7 @@ function Home() {
         data-aos="fade-right"
         data-aos-duration="3000"
       >
+        <h1 className="txt-40">Extra Projects</h1>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -260,7 +261,7 @@ function Home() {
                   <h3>
                     <span className="label-blue">반응형</span>Project 02
                   </h3>
-                  <p>정부 보안 기밀 웹사이트</p>
+                  <p>정부 보안 기밀 웹사이트(비밀번호: 1234, 4321)</p>
                 </div>
                 <ul className="list-icon">
                   <li>
@@ -338,6 +339,7 @@ function Home() {
         data-aos="fade-right"
         data-aos-duration="3000"
       >
+        <h1 className="txt-40">Video Projects</h1>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}

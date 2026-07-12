@@ -70,6 +70,7 @@ ul {
   background: var(--body-background) repeat;
   background-size: cover;
   color: var(--body-color);
+  padding-bottom: 10rem;
 }
 
 .cursor {
@@ -182,6 +183,10 @@ ul {
   background-color: #ffffff6f;
   margin-block: 10px;
 }
+
+.txt-40 {
+  font-size: 40px;
+}
 /* -------- KEYFRAMES CSS -------- */
 @keyframes move-left {
   from {
@@ -291,17 +296,24 @@ ul {
   margin-block: 200px;
   padding-inline: 30px;
   .swiper-item {
+    min-height: 300px;
     .swiper-video {
+      aspect-ratio: 1.7/1;
       overflow: clip;
       border-radius: 20px;
+      display: flex;
+      margin-bottom: 2rem;
       video {
-        width: 100%;
+        height: 100%;
       }
     }
     .swiper-description {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      h3 {
+        margin-bottom: 0.5rem;
+      }
       .list-icon {
         width: 30%;
         display: flex;
