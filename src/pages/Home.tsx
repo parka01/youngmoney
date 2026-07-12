@@ -8,7 +8,12 @@ function Home() {
         <div className="flexbox center">
           <div className="box-glass big">
             <div className="selfie">
-              <video src="./src/videos/selfie.mp4" muted loop autoPlay></video>
+              <video
+                src="./src/assets/videos/selfie.mp4"
+                muted
+                loop
+                autoPlay
+              ></video>
             </div>
             <p id="about">
               안녕하세요.
