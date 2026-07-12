@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router';
+import {
+  createBrowserRouter,
+  createHashRouter,
+  RouterProvider,
+} from 'react-router';
 import Archive from './pages/Archive';
 import Home from './pages/Home';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />, // App serves as the root layout
