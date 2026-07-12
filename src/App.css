@@ -1,42 +1,425 @@
-#root {
-  max-width: 1280px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  background: var(--body-background);
+} */
+
+@media (max-width: 750px) {
+  div .flexbox {
+    flex-direction: column;
+    padding-inline: 20px;
+  }
+
+  .center {
+    align-items: center;
+  }
+
+  .flexbox .box-glass.big {
+    width: 90%;
+  }
+
+  .box-glass.medium {
+    width: 80%;
+  }
+
+  .flexbox .list-portfolio {
+    width: 100%;
+    margin-block: 4rem;
+    flex-wrap: wrap;
+  }
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1320px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#wrap-main {
+  background: var(--body-background) no-repeat;
+  background-size: cover;
+  color: var(--body-color);
+  height: 4000px;
 }
 
-@keyframes logo-spin {
+.theme-light {
+  --primary-color: #fff;
+  --secondary-color: #fff;
+  --font-color: #384861;
+  --bg-color: #cae3fb;
+}
+
+.theme-dark {
+  --primary-color: #fff;
+  --secondary-color: #fff;
+  --font-color: #cae3fb;
+  --bg-color: #384861;
+}
+
+.App-header {
+  background-color: var(--body-background);
+  color: var(--body-color);
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 99999;
+  pointer-events: none;
+}
+
+.cursor-pointer {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  transform: translate(-50%, -50%) rotate(45deg);
+  border: solid 3px;
+  border-image: linear-gradient(135deg, #ff7eb3, #7afcff) 1;
+
+  transition: 0.2s ease;
+  box-shadow:
+    0 0 5px 5px #fff2a7df,
+    0 0 20px #73b9ff;
+}
+
+.cursor.hover .cursor-pointer {
+  width: 35px;
+  height: 35px;
+  box-shadow:
+    0 0 10px 5px #ff88ba,
+    0 0 20px#7afcff;
+}
+
+/* -------- DARK MODE CSS -------- */
+.dark-mode {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.switch-track {
+  width: 70px;
+  height: 32px;
+  display: block;
+  position: relative;
+  border-radius: 25px;
+  background: #ccc;
+  background: linear-gradient(#ccc 5%, #b5b5b5 45% 55%, #ccc);
+  border: solid 1px #ccc;
+}
+
+.slide-checkbox {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+  background: radial-gradient(#f4f4f4 20%, #cccccc);
+  border-radius: 20px;
+  border: solid 1px #b4b4b4;
+}
+
+.slide-checkbox:checked + .slider {
+  transition: 0.5s;
+  transform: translateX(38px);
+}
+
+.switch-track:has(.slide-checkbox:checked) {
+  background: linear-gradient(pink 5%, #ff9f9f 45% 55%, pink);
+  transition: 0.5s;
+}
+
+/* -------- 기본 설정 CSS -------- */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* -------- KEYFRAMES CSS -------- */
+@keyframes move-left {
   from {
-    transform: rotate(0deg);
+    transform: translateX(0);
   }
+
   to {
-    transform: rotate(360deg);
+    transform: translateX(-50%);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.wrap_top:hover .top_text_motion {
+  animation-play-state: paused;
+}
+
+/* -------- WRAP CSS -------- */
+#wrap-top {
+  height: 30px;
+  border: dashed 0.5px #ffffff8e;
+  background-color: #ffc5e9;
+  font-style: italic;
+  font-weight: bold;
+  /* motion */
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+
+  .top-text-motion {
+    height: 30px;
+    display: inline-block;
+    animation: move-left 20s linear infinite;
+  }
+
+  span {
+    margin-right: 20px;
+    display: inline-block;
+    color: #000;
   }
 }
 
-.card {
-  padding: 2em;
+#wrap-header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.read-the-docs {
-  color: #888;
+/* -------- CONTENT CSS -------- */
+.selfie {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  border-radius: 150px;
+  overflow: clip;
+  margin-block: 1rem;
+  border: double 10px #c0d0ff;
+
+  video {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.title {
+  /* 1. Define the gradient as a background image */
+  background-image: linear-gradient(45deg, #ffec6f 25%, #07ff9c 60%, #b76fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline;
+  font-size: 32px;
+  margin: 50px 0 100px 0;
+  font-weight: bolder;
+}
+
+.header {
+  box-sizing: border-box;
+  max-width: 1000px;
+  min-width: 620px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding-inline: 30px;
+
+  h1 {
+    box-sizing: border-box;
+    background-color: #ffffff48;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    width: 270px;
+    align-content: center;
+    height: 30px;
+  }
+}
+
+.container {
+  /* max-width: 1000px; */
+  /* min-width: 620px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header h1 {
+    display: inline;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+/* -------- COMPONENT CSS -------- */
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: 150px;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.box-glass {
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid 2px #ffffff9c;
+  border-radius: 30px;
+  background-color: #ffffff2f;
+  backdrop-filter: blur(2px);
+  box-shadow:
+    -5px 0 0px 0px #ffffffbc inset,
+    8px 8px 20px #00000038;
+}
+
+.list-portfolio {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box-glass.big {
+  width: 30%;
+  height: 30%;
+  flex-direction: column;
+  aspect-ratio: 1;
+  align-items: center;
+}
+
+.box-glass.medium {
+  width: 45%;
+  margin-bottom: 2rem;
+}
+
+.box-glass:hover {
+  backdrop-filter: blur(0);
+  transform: rotateY(360deg);
+  transition: transform 1s;
+  mix-blend-mode: overlay;
+}
+
+.box-glass2 {
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border: solid 0.5px #ffffff85;
+  border-radius: 30px;
+  position: relative;
+  border-radius: 20px;
+  background: #ffffff26;
+  backdrop-filter: blur(1.8px);
+  overflow: hidden;
+  box-shadow:
+    0 0 0 5px rgba(255, 255, 255, 0.2) inset,
+    0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.box-glass2::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 5px;
+  background: linear-gradient(#ffffff99, #ffffff1a);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  filter: blur(20px);
+}
+
+.portfolio-cover {
+  border-radius: 5px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+/* -------- NAV CSS -------- */
+.nav-gnb {
+  display: flex;
+
+  a {
+    display: block;
+    text-align: center;
+    width: 110px;
+    padding-block: 11px;
+  }
+}
+
+.menu-hamburger {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
+@media screen and (min-width: 710px) {
+  .menu-hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .nav-gnb {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu-items.active {
+    display: flex;
+    /* 클릭 시 메뉴 보임 */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+  }
 }
