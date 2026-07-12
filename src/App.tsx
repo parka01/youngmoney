@@ -77,7 +77,7 @@ function App() {
               <a href="#">Contacts</a>
             </li>
             <Link to="/archive">Archive</Link>
-          </ul>{' '}
+          </ul>
           <DarkModeSlider />
           <div className="menu-hamburger">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -90,7 +90,6 @@ function App() {
           </div>
         </div>
       </header>
-
       <Outlet />
       <div className="cursor" ref={cursorRef}>
         <span className="cursor-pointer"></span>

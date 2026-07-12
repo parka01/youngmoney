@@ -1,3 +1,14 @@
+/* -------- 기본 설정 CSS -------- */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +20,7 @@
 } */
 
 @media (max-width: 750px) {
-  div .flexbox {
+  div .box-flex {
     flex-direction: column;
     padding-inline: 20px;
   }
@@ -18,7 +29,7 @@
     align-items: center;
   }
 
-  .flexbox .box-glass.big {
+  .box-flex .box-glass.big {
     width: 90%;
   }
 
@@ -26,26 +37,11 @@
     width: 80%;
   }
 
-  .flexbox .list-portfolio {
+  .box-flex .list-portfolio {
     width: 100%;
     margin-block: 4rem;
     flex-wrap: wrap;
   }
-}
-
-.test {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1320px;
-  margin: 0 auto;
-}
-
-#wrap-main {
-  background: var(--body-background) no-repeat;
-  background-size: cover;
-  color: var(--body-color);
-  height: 4000px;
 }
 
 .theme-light {
@@ -67,25 +63,27 @@
   color: var(--body-color);
 }
 
+#wrap-main {
+  background: var(--body-background) repeat;
+  background-size: cover;
+  color: var(--body-color);
+}
+
 .cursor {
   position: fixed;
-  top: 0;
+  top: 15px;
   left: 0;
-
   z-index: 99999;
   pointer-events: none;
 }
 
 .cursor-pointer {
   position: absolute;
-
   width: 20px;
   height: 20px;
-
   transform: translate(-50%, -50%) rotate(45deg);
   border: solid 3px;
   border-image: linear-gradient(135deg, #ff7eb3, #7afcff) 1;
-
   transition: 0.2s ease;
   box-shadow:
     0 0 5px 5px #fff2a7df,
@@ -149,17 +147,38 @@
   transition: 0.5s;
 }
 
-/* -------- 기본 설정 CSS -------- */
+/* -------- CONTENT CSS -------- */
 
-a {
-  text-decoration: none;
-  color: inherit;
+.header {
+  box-sizing: border-box;
+  max-width: 1000px;
+  min-width: 620px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+
+  h1 {
+    box-sizing: border-box;
+    background-color: #ffffff48;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    width: 270px;
+    align-content: center;
+    height: 30px;
+  }
 }
 
-ul {
-  list-style: none;
+.line-break {
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff6f;
+  margin-block: 10px;
 }
-
 /* -------- KEYFRAMES CSS -------- */
 @keyframes move-left {
   from {
@@ -176,6 +195,13 @@ ul {
 }
 
 /* -------- WRAP CSS -------- */
+#wrap-header {
+  height: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 #wrap-top {
   height: 30px;
   border: dashed 0.5px #ffffff8e;
@@ -191,6 +217,7 @@ ul {
     height: 30px;
     display: inline-block;
     animation: move-left 20s linear infinite;
+    align-content: center;
   }
 
   span {
@@ -200,14 +227,135 @@ ul {
   }
 }
 
-#wrap-header {
-  height: 50px;
-  position: sticky;
-  top: 0;
-  left: 0;
+/* -------- SECTION-ABOUT -------- */
+#section-about {
+  margin-block: 100px;
+  padding-inline: 30px;
+  .title {
+    background-image: linear-gradient(45deg, #ffec6f 25%, #07ff9c 60%, #b76fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline;
+    font-size: 32px;
+    margin: 50px 0 100px 0;
+    font-weight: bolder;
+  }
+  .list-history {
+    display: flex;
+    .date {
+      color: #5858ff;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+    .detail-info {
+      display: flex;
+      flex-direction: column;
+      .history {
+        font-weight: bold;
+      }
+    }
+  }
+}
+/* -------- SECTION-BRAND -------- */
+#section-brand {
+  margin-block: 200px;
+  padding-inline: 30px;
+  .brand-identity {
+    margin-bottom: 100px;
+  }
+  .box-flex {
+    border-radius: 20px;
+    overflow: clip;
+  }
+  .media {
+    width: 60%;
+  }
+  .media-info {
+    width: 35%;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* -------- SECTION PROJECT -------- */
+#section-project {
+  margin-block: 200px;
+  padding-inline: 30px;
+  .swiper-item {
+    .swiper-video {
+      overflow: clip;
+      border-radius: 20px;
+      video {
+        width: 100%;
+      }
+    }
+    .swiper-description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .list-icon {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        li {
+          width: 23%;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
-/* -------- CONTENT CSS -------- */
+/* -------- SECTION VIDEO PROJECT -------- */
+#section-video-project {
+  margin-block: 200px;
+  padding: 50px 30px;
+  .swiper-item {
+    .swiper-video {
+      overflow: clip;
+      border-radius: 20px;
+      video {
+        width: 100%;
+      }
+    }
+    .swiper-description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .list-icon {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        li {
+          width: 23%;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  width: 95vw;
+  min-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header h1 {
+    display: inline;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
 .selfie {
   width: 200px;
   height: 250px;
@@ -223,64 +371,15 @@ ul {
   }
 }
 
-.title {
-  /* 1. Define the gradient as a background image */
-  background-image: linear-gradient(45deg, #ffec6f 25%, #07ff9c 60%, #b76fff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  display: inline;
-  font-size: 32px;
-  margin: 50px 0 100px 0;
-  font-weight: bolder;
-}
-
-.header {
-  box-sizing: border-box;
-  max-width: 1000px;
-  min-width: 620px;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  align-items: center;
-  padding-inline: 30px;
-
-  h1 {
-    box-sizing: border-box;
-    background-color: #ffffff48;
-    border-radius: 25px;
-    font-size: 15px;
-    font-weight: normal;
-    text-align: center;
-    width: 270px;
-    align-content: center;
-    height: 30px;
-  }
-}
-
-.container {
-  /* max-width: 1000px; */
-  /* min-width: 620px; */
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .header h1 {
-    display: inline;
-    font-weight: normal;
-    text-align: center;
-  }
-}
-
 /* -------- COMPONENT CSS -------- */
-.flexbox {
+.box-flex {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-inline: 150px;
+}
+
+.half {
+  width: 48%;
 }
 
 .col {
@@ -322,7 +421,7 @@ ul {
 
 .box-glass:hover {
   backdrop-filter: blur(0);
-  transform: rotateY(360deg);
+  /* transform: rotateY(360deg); */
   transition: transform 1s;
   mix-blend-mode: overlay;
 }
@@ -378,7 +477,15 @@ ul {
     object-fit: cover;
   }
 }
-
+.label-blue {
+  border: solid 1px dodgerblue;
+  font-size: 15px;
+  padding: 2px 5px;
+  color: dodgerblue;
+  background: #e5f1fd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
 /* -------- NAV CSS -------- */
 .nav-gnb {
   display: flex;
