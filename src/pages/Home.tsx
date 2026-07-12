@@ -186,7 +186,7 @@ function Home() {
       {/* ---- SECTION PROJECT ---- */}
       <section
         id="section-project"
-        data-aos="fade-left"
+        data-aos="fade-right"
         data-aos-duration="3000"
       >
         <Swiper
@@ -335,7 +335,7 @@ function Home() {
       {/* ---- VIDEO WORKS ---- */}
       <section
         id="section-video-project"
-        data-aos="fade-left"
+        data-aos="fade-right"
         data-aos-duration="3000"
       >
         <Swiper
