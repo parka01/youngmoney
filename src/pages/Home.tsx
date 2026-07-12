@@ -4,13 +4,13 @@ import 'aos/dist/aos.css'; // Import the entry styles
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import htmlIcon from '../images/icon_html.png';
-import cssIcon from '../images/icon_css.png';
-import jsIcon from '../images/icon_js.png';
-import photoshopIcon from '../images/icon_photoshop.png';
-import illustratorIcon from '../images/icon_illustrator.png';
-import premiereIcon from '../images/icon_premiere.png';
-import chatGPTIcon from '../images/icon_chatgpt.png';
+import htmlIcon from '../assets/images/icon_html.png';
+import cssIcon from '../assets/images/icon_css.png';
+import jsIcon from '../assets/images/icon_js.png';
+import photoshopIcon from '../assets/assets/images/icon_photoshop.png';
+import illustratorIcon from '../assets/images/icon_illustrator.png';
+import premiereIcon from '../assets/images/icon_premiere.png';
+import chatGPTIcon from '../assets/images/icon_chatgpt.png';
 
 import './styles.css';
 // import required modules
@@ -252,25 +252,16 @@ function Home() {
                 </div>
                 <ul className="list-icon">
                   <li>
-                    <img
-                      src="./src/images/icon_html.png"
-                      alt="html icon image"
-                    />
+                    <img src={htmlIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img src="./src/images/icon_css.png" alt="css icon image" />
+                    <img src={cssIcon} alt="css icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_js.png"
-                      alt="javascript icon image"
-                    />
+                    <img src={jsIcon} alt="javascript icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_chatgpt.png"
-                      alt="chatgpt icon image"
-                    />
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
                   </li>
                 </ul>
               </div>
@@ -293,22 +284,13 @@ function Home() {
                 </div>
                 <ul className="list-icon">
                   <li>
-                    <img src="../images/icon_html.png" alt="html icon image" />
+                    <img src={illustratorIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img src="./src/images/icon_css.png" alt="css icon image" />
+                    <img src={photoshopIcon} alt="css icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_js.png"
-                      alt="javascript icon image"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="./src/images/icon_chatgpt.png"
-                      alt="chatgpt icon image"
-                    />
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
                   </li>
                 </ul>
               </div>
@@ -329,25 +311,13 @@ function Home() {
                 </div>
                 <ul className="list-icon">
                   <li>
-                    <img
-                      src="./src/images/icon_html.png"
-                      alt="html icon image"
-                    />
+                    <img src={illustratorIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img src="./src/images/icon_css.png" alt="css icon image" />
+                    <img src={photoshopIcon} alt="css icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_js.png"
-                      alt="javascript icon image"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="./src/images/icon_chatgpt.png"
-                      alt="chatgpt icon image"
-                    />
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
                   </li>
                 </ul>
               </div>
@@ -398,28 +368,16 @@ function Home() {
                 </div>
                 <ul className="list-icon">
                   <li>
-                    <img
-                      src="./src/images/icon_premiere.png"
-                      alt="premiere pro icon image"
-                    />
+                    <img src={premiereIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_photoshop.png"
-                      alt="photoshop icon image"
-                    />
+                    <img src={illustratorIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_illustrator.png"
-                      alt="illustrator icon image"
-                    />
+                    <img src={photoshopIcon} alt="css icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_chatgpt.png"
-                      alt="chatgpt icon image"
-                    />
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
                   </li>
                 </ul>
               </div>
@@ -442,28 +400,16 @@ function Home() {
                 </div>
                 <ul className="list-icon">
                   <li>
-                    <img
-                      src="./src/images/icon_premiere.png"
-                      alt="premiere pro icon image"
-                    />
+                    <img src={premiereIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_photoshop.png"
-                      alt="photoshop icon image"
-                    />
+                    <img src={illustratorIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_illustrator.png"
-                      alt="illustrator icon image"
-                    />
+                    <img src={photoshopIcon} alt="css icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_chatgpt.png"
-                      alt="chatgpt icon image"
-                    />
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
                   </li>
                 </ul>
               </div>
@@ -486,28 +432,16 @@ function Home() {
                 </div>
                 <ul className="list-icon">
                   <li>
-                    <img
-                      src="./src/images/icon_premiere.png"
-                      alt="premiere pro icon image"
-                    />
+                    <img src={premiereIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_photoshop.png"
-                      alt="photoshop icon image"
-                    />
+                    <img src={illustratorIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_illustrator.png"
-                      alt="illustrator icon image"
-                    />
+                    <img src={photoshopIcon} alt="css icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_chatgpt.png"
-                      alt="chatgpt icon image"
-                    />
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
                   </li>
                 </ul>
               </div>
@@ -530,28 +464,16 @@ function Home() {
                 </div>
                 <ul className="list-icon">
                   <li>
-                    <img
-                      src="./src/images/icon_premiere.png"
-                      alt="premiere pro icon image"
-                    />
+                    <img src={premiereIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_photoshop.png"
-                      alt="photoshop icon image"
-                    />
+                    <img src={illustratorIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_illustrator.png"
-                      alt="illustrator icon image"
-                    />
+                    <img src={photoshopIcon} alt="css icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_chatgpt.png"
-                      alt="chatgpt icon image"
-                    />
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
                   </li>
                 </ul>
               </div>
@@ -574,28 +496,16 @@ function Home() {
                 </div>
                 <ul className="list-icon">
                   <li>
-                    <img
-                      src="./src/images/icon_premiere.png"
-                      alt="premiere pro icon image"
-                    />
+                    <img src={premiereIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_photoshop.png"
-                      alt="photoshop icon image"
-                    />
+                    <img src={illustratorIcon} alt="html icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_illustrator.png"
-                      alt="illustrator icon image"
-                    />
+                    <img src={photoshopIcon} alt="css icon image" />
                   </li>
                   <li>
-                    <img
-                      src="./src/images/icon_chatgpt.png"
-                      alt="chatgpt icon image"
-                    />
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
                   </li>
                 </ul>
               </div>
