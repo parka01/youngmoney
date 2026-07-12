@@ -282,7 +282,7 @@ function Home() {
             <div className="swiper-item">
               <div className="swiper-video">
                 <img
-                  src="../images/better_monday_banner.png"
+                  src=".assets/better_monday_banner.png"
                   alt="better monday cover image"
                 />
               </div>
