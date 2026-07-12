@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
-import DarkModeSlider from './components/DarkModeSlider;
+import DarkModeSlider from './components/DarkModeSlider';
 import { useEffect, useRef } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 
