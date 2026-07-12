@@ -1,12 +1,14 @@
 /* global style css */
 :root {
-  --body-background: url(../public/images/bg_dreamy_pink.png) no-repeat;
+  --body-background: url(./images/bg_dreamy_pink.png) no-repeat;
+  /* --body-background: url(../public/images/bg_dreamy_pink.png) no-repeat; */
+  /* public/images */
   --body-color: #0a093f;
   --link-color: dodgerblue;
 }
 
 [data-theme='dark'] {
-  --body-background: url(./images/bg_dark_galaxy.png) no-repeat;
+  --body-background: url(./images/bg_dark_galaxy.jpg) no-repeat;
   --body-color: #cae3fb;
   --link-color: cyan;
 }
