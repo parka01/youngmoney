@@ -8,7 +8,7 @@
 }
 
 [data-theme='dark'] {
-  --body-background: url(./assets/images/bg_dark_galaxy.jpg) no-repeat;
+  --body-background: url(./assets/images/bg_dark_galaxy.png) no-repeat;
   --body-color: #cae3fb;
   --link-color: cyan;
 }
@@ -29,4 +29,5 @@ body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+  overflow-x: clip;
 }

@@ -23,3 +23,7 @@
 .swiper-wrapper {
   margin-bottom: 4rem;
 }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #f1bdff;
+}

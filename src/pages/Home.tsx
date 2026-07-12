@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the entry styles
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,12 +14,30 @@ import coverBetterMonday from '../assets/images/better_monday_banner.png';
 import './styles.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import meter from '../assets/images/meter.png';
+import meterWhite from '../assets/images/meter_white.png';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
 function Home() {
+  const selectedTheme = localStorage.getItem('selectedTheme');
+  const words = [
+    '소통',
+    '반응형',
+    '웹 표준',
+    '효율성',
+    '관리성',
+    '타당성',
+    '심미성',
+    '상호작용',
+    '공동작업',
+  ];
+  const [index, setIndex] = useState(0);
+  const [scrollYAmount, setScrollYAmount] = useState(0);
+  const rotateMovement = scrollYAmount * 0.05;
+
   useEffect(() => {
     AOS.init({
       // Global settings:
@@ -28,8 +46,50 @@ function Home() {
     });
   }, []);
 
+  useEffect(() => {
+    // Set up the 900ms interval
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 900);
+
+    // Clean up the interval when the component unmounts to prevent memory leaks
+    return () => clearInterval(interval);
+  }, [words.length]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollYAmount(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
+      <main
+        className="banner box-glass"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h1 className="headline">
+          <span className="random">{words[index]}</span>을 생각하는 웹 퍼블리셔
+          입니다.
+        </h1>
+        <video src="./videos/banner.mp4" loop autoPlay muted></video>
+      </main>
+      <div className="box-meter">
+        <div
+          className="meter"
+          style={{ transform: `rotate(${rotateMovement}deg)` }}
+        >
+          {selectedTheme === 'light' ? (
+            <img src={meter} alt="meter image" />
+          ) : (
+            <img src={meterWhite} alt="meter image" />
+          )}
+        </div>
+      </div>
+
       {/* ---- SECTION ABOUT ---- */}
       <section id="section-about">
         <span className="title">
@@ -138,7 +198,14 @@ function Home() {
               뷰티브랜드 기업입니다. 깨끗한 낙동강 하구에서 얻을 수 있는 자연
               친화적 원료를 기반으로 한 화장품을 연구 및 개발하고 있습니다.
             </p>
-            <div>View BI/BX guide</div>
+            <a
+              href="https://parka01.github.io/brand-portfolio"
+              target="_blank"
+              class="btn-view"
+            >
+              View BI/BX guide
+              <div class="arrow-button"></div>
+            </a>
           </div>
         </div>
         <div
@@ -147,15 +214,27 @@ function Home() {
           data-aos-duration="3000"
         >
           <div className="box-flex col media-info">
-            <div>BI/BX guide</div>
+            <div>
+              <span className="label-blue">반응형</span>Website
+            </div>
             <h1>화장품 브랜드 'newB.tria'</h1>
             <p>
-              newB.tria(뉴비트리아)는 부산 낙동강 하구에서 폭발적으로 늘어나
-              생태계를 위협하는 뉴트리아를 활용하는 사업에서 출발하게 된
-              뷰티브랜드 기업입니다. 깨끗한 낙동강 하구에서 얻을 수 있는 자연
-              친화적 원료를 기반으로 한 화장품을 연구 및 개발하고 있습니다.
+              newB.tria의 정체성을 담은 브랜드 아이덴티티 작업을 기반으로 만든
+              웹사이트입니다. <br />
+              플로깅 행사, 학생증 인증 행사 등 다양한 행사는 물론 통신사와
+              결합한 혜택도 제공하고 있습니다.
+              <br />
+              어떤 환경에서도 완벽하게 상호작용적인 UI/UX를 경험할 수 있도록{' '}
+              <b>반응형</b>으로 제작하였습니다.
             </p>
-            <div>View BI/BX guide</div>
+            <a
+              href="https://parka01.github.io/portfolio_no.01"
+              target="_blank"
+              className="btn-view"
+            >
+              View WEB site
+              <div className="arrow-button"></div>
+            </a>
           </div>
           <div className="box-flex media">
             <video src="./videos/newbtria.mp4" autoPlay muted loop></video>
@@ -170,15 +249,20 @@ function Home() {
             <video src="./videos/daffodil.mp4" autoPlay muted loop></video>
           </div>
           <div className="box-flex col media-info">
-            <div>BI/BX guide</div>
+            <div>Web guide</div>
             <h1>화장품 브랜드 'newB.tria'</h1>
             <p>
-              newB.tria(뉴비트리아)는 부산 낙동강 하구에서 폭발적으로 늘어나
-              생태계를 위협하는 뉴트리아를 활용하는 사업에서 출발하게 된
-              뷰티브랜드 기업입니다. 깨끗한 낙동강 하구에서 얻을 수 있는 자연
-              친화적 원료를 기반으로 한 화장품을 연구 및 개발하고 있습니다.
+              newB.tria웹사이트를 어떤 생각으로 기획하고 제작하게 되었는지를
+              기록해둔 설명서입니다.
             </p>
-            <div>View BI/BX guide</div>
+            <a
+              href="https://parka01.github.io/brand-portfolio/pages/web-guide"
+              target="_blank"
+              className="btn-view"
+            >
+              View WEB guide
+              <div className="arrow-button"></div>
+            </a>
           </div>
         </div>
       </section>
@@ -253,9 +337,13 @@ function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-item">
-              <div className="swiper-video">
+              <a
+                className="swiper-video"
+                href="https://parka01.github.io/portfolio_no.03"
+                target="_blank"
+              >
                 <video src="./videos/project_2.mp4" autoPlay loop muted></video>
-              </div>
+              </a>
               <div className="swiper-description">
                 <div>
                   <h3>
@@ -282,14 +370,16 @@ function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-item">
-              <div className="swiper-video">
+              <a
+                className="swiper-video"
+                href="https://parka01.github.io/brand-portfolio/pages/better-monday"
+                target="_blank"
+              >
                 <img src={coverBetterMonday} alt="better monday cover image" />
-              </div>
+              </a>
               <div className="swiper-description">
                 <div>
-                  <h3>
-                    <span className="label-blue">반응형</span>Project 03
-                  </h3>
+                  <h3>Project 03</h3>
                   <p>BETTER MONDAY 커피 브랜드 배너 작업</p>
                 </div>
                 <ul className="list-icon">
@@ -308,13 +398,17 @@ function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-item">
-              <div className="swiper-video">
+              <a
+                className="swiper-video"
+                href="https://parka01.github.io/brand-portfolio/pages/cheese-scone"
+                target="_blank"
+              >
                 <img src={coverCheese} alt="cheese scone cover image" />
-              </div>
+              </a>
               <div className="swiper-description">
                 <div>
                   <h3>Project 04</h3>
-                  <p>기획, 대본 작성, 진행, 촬영, 편집 총 20화 제작</p>
+                  <p>촉촉한 황치즈 스콘 상세페이지 작업</p>
                 </div>
                 <ul className="list-icon">
                   <li>
@@ -339,7 +433,7 @@ function Home() {
         data-aos="fade-right"
         data-aos-duration="3000"
       >
-        <h1 className="txt-40">Video Projects</h1>
+        <h1 className="txt-40">Video Works</h1>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}

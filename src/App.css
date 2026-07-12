@@ -187,6 +187,19 @@ ul {
 .txt-40 {
   font-size: 40px;
 }
+.box-meter {
+  width: 800px;
+  height: 800px;
+  position: fixed;
+  right: -70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.meter {
+  img {
+    width: 100%;
+  }
+}
 /* -------- KEYFRAMES CSS -------- */
 @keyframes move-left {
   from {
@@ -225,7 +238,7 @@ ul {
   .top-text-motion {
     height: 30px;
     display: inline-block;
-    animation: move-left 20s linear infinite;
+    animation: move-left 40s linear infinite;
     align-content: center;
   }
 
@@ -235,11 +248,40 @@ ul {
     color: #000;
   }
 }
-
-/* -------- SECTION-ABOUT -------- */
-#section-about {
-  margin-block: 100px;
+/* -------- SECTION BANNER -------- */
+.banner {
+  z-index: 10;
+  position: relative;
+  width: calc(100% - 60px);
+  min-height: 400px;
+  max-height: 500px;
   padding-inline: 30px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5rem;
+  justify-content: center;
+  .headline {
+    padding: 30px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .random {
+      font-size: 50px;
+    }
+  }
+  video {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center top;
+    border-radius: 20px;
+  }
+}
+/* -------- SECTION ABOUT -------- */
+#section-about {
+  margin-block: 300px;
+  padding: 0px 200px 0px 30px;
   .title {
     background-image: linear-gradient(45deg, #ffec6f 25%, #07ff9c 60%, #b76fff);
     -webkit-background-clip: text;
@@ -267,12 +309,12 @@ ul {
     }
   }
 }
-/* -------- SECTION-BRAND -------- */
+/* -------- SECTION BRAND -------- */
 #section-brand {
-  margin-block: 200px;
-  padding-inline: 30px;
+  margin-block: 300px;
+  padding: 0px 200px 0px 30px;
   .brand-identity {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .box-flex {
     border-radius: 20px;
@@ -294,7 +336,7 @@ ul {
 /* -------- SECTION PROJECT -------- */
 #section-project {
   margin-block: 200px;
-  padding-inline: 30px;
+  padding: 0px 200px 0px 30px;
   .swiper-item {
     min-height: 300px;
     .swiper-video {
@@ -333,7 +375,7 @@ ul {
 /* -------- SECTION VIDEO PROJECT -------- */
 #section-video-project {
   margin-block: 200px;
-  padding: 50px 30px;
+  padding: 50px 200px 50px 30px;
   .swiper-item {
     .swiper-video {
       overflow: clip;
