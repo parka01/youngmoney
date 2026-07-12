@@ -40,7 +40,7 @@ function Home() {
                 부산 낙동강의 뉴트리아를 활용하는 방안으로 기획하게된 뷰티브랜드
                 newB.tria입니다.
               </p>
-            </li>{' '}
+            </li>
             <li className="box-glass medium col">
               <div className="portfolio-cover"></div>
               <h2>신세계 백화점 미디어 파사드 영상 제작</h2>
