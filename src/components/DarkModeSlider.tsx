@@ -1,5 +1,4 @@
 import React from 'react';
-import './DarkMode.css';
 
 const DarkModeSlider = () => {
   const setDarkMode = () => {
