@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the entry styles
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
 import htmlIcon from '../assets/images/icon_html.png';
 import cssIcon from '../assets/images/icon_css.png';
 import jsIcon from '../assets/images/icon_js.png';
@@ -13,10 +11,11 @@ import premiereIcon from '../assets/images/icon_premiere.png';
 import chatGPTIcon from '../assets/images/icon_chatgpt.png';
 import coverCheese from '../assets/images/cheese_scone.png';
 import coverBetterMonday from '../assets/images/better_monday_banner.png';
-
 import './styles.css';
+
 // import required modules
 import { Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 function Home() {
   useEffect(() => {
@@ -44,8 +43,9 @@ function Home() {
               <video src="./videos/selfie.mp4" muted loop autoPlay></video>
             </div>
             <h2>
-              안녕하세요, 기초부터 차곡차곡 다져나가며 성장하는 웹
-              퍼블리셔입니다.
+              안녕하세요,
+              <br />
+              기초부터 차곡차곡 다져나가며 성장하는 웹 퍼블리셔입니다.
             </h2>
             <p>
               프론트엔드 개발자로 일하며 화면을 멋지게 구성하는 웹 퍼블리셔
@@ -182,7 +182,11 @@ function Home() {
       </section>
 
       {/* ---- SECTION PROJECT ---- */}
-      <section id="section-project">
+      <section
+        id="section-project"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -208,14 +212,18 @@ function Home() {
         >
           <SwiperSlide>
             <div className="swiper-item">
-              <div className="swiper-video">
+              <a
+                className="swiper-video"
+                href="https://parka01.github.io/portfolio_no.02"
+                target="_blank"
+              >
                 <video
                   src="./videos/screenshot_corn_farm.mp4"
                   autoPlay
                   loop
                   muted
                 ></video>
-              </div>
+              </a>
               <div className="swiper-description">
                 <div>
                   <h3>
@@ -323,7 +331,11 @@ function Home() {
       </section>
 
       {/* ---- VIDEO WORKS ---- */}
-      <section id="section-video-project">
+      <section
+        id="section-video-project"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <Swiper
           slidesPerView={1}
           spaceBetween={10}

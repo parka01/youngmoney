@@ -24,7 +24,10 @@ ul {
     flex-direction: column;
     padding-inline: 20px;
   }
-
+  .half.col {
+    width: 98%;
+    margin-bottom: 5rem;
+  }
   .center {
     align-items: center;
   }
@@ -200,6 +203,7 @@ ul {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 #wrap-top {
