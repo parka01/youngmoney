@@ -12,6 +12,8 @@ import chatGPTIcon from '../assets/images/icon_chatgpt.png';
 import coverCheese from '../assets/images/cheese_scone.png';
 import coverBetterMonday from '../assets/images/better_monday_banner.png';
 import './styles.css';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
