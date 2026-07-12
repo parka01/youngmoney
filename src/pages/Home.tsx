@@ -9,7 +9,7 @@ function Home() {
           <div className="box-glass big">
             <div className="selfie">
               <video
-                src="../assets/videos/selfie.mp4"
+                src={`${import.meta.env.BASE_URL}src/assets/videos/selfie.mp4`}
                 muted
                 loop
                 autoPlay
