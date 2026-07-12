@@ -182,11 +182,7 @@ function Home() {
       </section>
 
       {/* ---- SECTION PROJECT ---- */}
-      <section
-        id="section-project"
-        data-aos="fade-left"
-        data-aos-duration="2000"
-      >
+      <section id="section-project">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
