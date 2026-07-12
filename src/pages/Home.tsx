@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import htmlIcon from '../assets/images/icon_html.png';
 import cssIcon from '../assets/images/icon_css.png';
 import jsIcon from '../assets/images/icon_js.png';
-import photoshopIcon from '../assets/assets/images/icon_photoshop.png';
+import photoshopIcon from '../assets/images/icon_photoshop.png';
 import illustratorIcon from '../assets/images/icon_illustrator.png';
 import premiereIcon from '../assets/images/icon_premiere.png';
 import chatGPTIcon from '../assets/images/icon_chatgpt.png';
