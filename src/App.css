@@ -274,6 +274,7 @@ ul {
   }
   .media-info {
     width: 35%;
+    padding-block: 2rem;
   }
 
   video {
