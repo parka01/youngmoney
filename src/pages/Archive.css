@@ -19,6 +19,7 @@
       left: 0px;
       bottom: 4vh;
       z-index: 1;
+      filter: drop-shadow(10px 0 6px #00000066);
 
       img {
         display: block;
@@ -33,6 +34,7 @@
       bottom: 11vh;
       z-index: 1;
       transform: translate(-50%);
+      filter: drop-shadow(10px 0 6px #00000066);
 
       img {
         display: block;
@@ -55,6 +57,7 @@
       .item {
         .frame-small {
           width: 200px;
+          filter: drop-shadow(3px 3px 5px #00000088);
 
           img {
             display: block;

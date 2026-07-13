@@ -42,7 +42,6 @@ function Archive() {
           className="wall"
           style={{ transform: `translateX(-${leftMovement}px)` }}
         >
-
           <div className="item">
             <div className="frame-small frame1">
               <img
