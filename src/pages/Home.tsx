@@ -673,7 +673,7 @@ function Home() {
         <div className="inner">
           <p className="contact-sub">LET’S BUILD SOMETHING GREAT</p>
           <h2 className="contact-title">✈️새로운 여정을 위하여,</h2>
-          <div>
+          <div className='box-handwriting'>
             <svg className="handwriting" id="b" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 667.47 114.92">
               <defs>
@@ -700,7 +700,7 @@ function Home() {
             </svg>
           </div>
           <a href="mailto:for.unique.fashion@gmail.com" className="btn-contact">
-            <span>Contact</span>
+           Contact
           </a>
         </div>
       </section>
