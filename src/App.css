@@ -407,6 +407,7 @@ ul {
 
       video {
         height: 100%;
+        border-radius: 20px;
       }
     }
 
@@ -451,6 +452,7 @@ ul {
 
       video {
         width: 100%;
+        border-radius: 20px;
       }
     }
 
@@ -710,12 +712,14 @@ footer {
 /* -------- NAV CSS -------- */
 .nav-gnb {
   display: flex;
+  border-radius: 30px;
+  background: #ffffff48;
 
   a {
     display: block;
     text-align: center;
     width: 110px;
-    padding-block: 11px;
+    padding-block: 3px;
   }
 }
 
@@ -808,5 +812,14 @@ footer {
     right: 0;
     background: #fff;
     width: 100%;
+  }
+
+  .box-flex.media {
+    margin-bottom: 2rem;
+    border-radius: 20px;
+
+    video {
+      border-radius: 20px;
+    }
   }
 }
