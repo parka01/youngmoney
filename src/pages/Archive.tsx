@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Archive.css';
 import chair from '../assets/images/chair.png'
+import console from '../assets/images/console.png'
 import frameRectangle from '../assets/images/frame_gold_rectangle.png'
 import frameRectangle2 from '../assets/images/frame_gold_rectangle_02.png'
 import frameRectangle3 from '../assets/images/frame_gold_rectangle_03.png'
@@ -33,6 +34,9 @@ function Archive() {
       <div className="box-wall">
         <div className='chair'>
           <img src={chair} alt="chair image" />
+        </div>
+        <div className='console'>
+          <img src={console} alt="console image" />
         </div>
         <div
           className="wall"
