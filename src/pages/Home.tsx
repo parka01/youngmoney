@@ -17,6 +17,23 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import meter from '../assets/images/meter.png';
 import meterWhite from '../assets/images/meter_white.png';
+import cardNews1 from '../assets/images/card_news_01.png'
+import cardNews2 from '../assets/images/card_news_02.png'
+import cardNews3 from '../assets/images/card_news_03.png'
+import cardNews4 from '../assets/images/card_news_04.png'
+import cardNews5 from '../assets/images/card_news_05.png'
+import cardNews6 from '../assets/images/card_news_06.png'
+import cardNews7 from '../assets/images/card_news_07.png'
+import cardNews8 from '../assets/images/card_news_08.png'
+import cardNews9 from '../assets/images/card_news_09.png'
+import cardNews10 from '../assets/images/card_news_10.png'
+import cardNews11 from '../assets/images/card_news_11.png'
+import cardNews12 from '../assets/images/card_news_12.png'
+import cardNews13 from '../assets/images/card_news_13.png'
+import cardNews14 from '../assets/images/card_news_14.png'
+import cardNews15 from '../assets/images/card_news_15.png'
+import cardNews16 from '../assets/images/card_news_16.png'
+import cardNews17 from '../assets/images/card_news_17.png'
 
 // import required modules
 import { Pagination } from 'swiper/modules';
@@ -658,6 +675,213 @@ function Home() {
           </SwiperSlide>
         </Swiper>
       </section>
+
+      {/* ---- SECTION CARD NEWS ---- */}
+      <section
+        id="section-card-news"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+      >
+        <h1 className="txt-40">Extra Projects</h1>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={10}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews1} alt="card news image 1" />
+              </div>
+              <div className="swiper-description">
+                <div>
+                  <h3>
+                    2026 용인시 미션투어
+                  </h3>
+                  <p>용인시 소식 카드뉴스 제작</p>
+                </div>
+                <ul className="list-icon">
+                  <li>
+                    <img src={illustratorIcon} alt="illustrator icon image" />
+                  </li>
+                  <li>
+                    <img src={photoshopIcon} alt="photoshop icon image" />
+                  </li>
+                  <li>
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews2} alt="card news image 2" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews3} alt="card news image 3" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews4} alt="card news image 4" />
+              </div>
+              <div className="swiper-description">
+                <div>
+                  <h3>
+                    2024 모바일 건강보험증
+                  </h3>
+                  <p>디지털배움터 모바일 건강보험증 카드뉴스 제작</p>
+                </div>
+                <ul className="list-icon">
+                  <li>
+                    <img src={illustratorIcon} alt="illustrator icon image" />
+                  </li>
+                  <li>
+                    <img src={photoshopIcon} alt="photoshop icon image" />
+                  </li>
+                  <li>
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews5} alt="card news image 5" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews6} alt="card news image 6" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews7} alt="card news image 7" />
+              </div>
+              <div className="swiper-description">
+                <div>
+                  <h3>
+                    AI 활용 노래 만들기
+                  </h3>
+                  <p>디지털배움터 AI활용 노래 만들기 카드뉴스 제작</p>
+                </div>
+                <ul className="list-icon">
+                  <li>
+                    <img src={illustratorIcon} alt="illustrator icon image" />
+                  </li>
+                  <li>
+                    <img src={photoshopIcon} alt="photoshop icon image" />
+                  </li>
+                  <li>
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews8} alt="card news image 8" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews9} alt="card news image 9" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews10} alt="card news image 10" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews11} alt="card news image 11" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </section>
+
+
       <section id="section-contact">
         <p>LET’S BUILD SOMETHING GREAT</p>
         <h2>✈️새로운 여정을 위하여,</h2>
@@ -691,6 +915,8 @@ function Home() {
           Contact
         </a>
       </section>
+
+
       <footer>
         <div className='copyright'>
           Copyright © Ahyoung Park 2026 All rights reserved

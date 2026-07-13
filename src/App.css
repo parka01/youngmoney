@@ -42,7 +42,7 @@ ul {
   background: var(--body-background) repeat;
   background-size: cover;
   color: var(--body-color);
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .cursor {
@@ -390,6 +390,19 @@ ul {
       }
     }
 
+    .swiper-cardnews {
+      aspect-ratio: 1;
+      overflow: clip;
+      border-radius: 20px;
+      display: flex;
+      margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+
     .swiper-description {
       display: flex;
       justify-content: space-between;
@@ -705,7 +718,8 @@ footer {
 
   #section-about,
   #section-brand,
-  #section-project {
+  #section-project,
+  #section-video-project {
     width: 98%;
     padding: 0 10px;
 
