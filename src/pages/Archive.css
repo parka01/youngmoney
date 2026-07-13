@@ -19,27 +19,40 @@
       height: 100%;
       background: url(../images/wall_mint.png) repeat-x;
       background-size: contain;
-      img {
-        width: 3000px;
+
+      .chair {
+        position: absolute;
+        width: 25vw;
+        left: 30px;
+
+        img {
+          display: block;
+          width: 100%;
+        }
       }
+
       .item {
         .frame-small {
           width: 200px;
+
           img {
             display: block;
             width: 100%;
           }
         }
+
         .heart {
           position: absolute;
           left: 20%;
           top: 10%;
         }
+
         .frame {
           position: absolute;
           top: 0;
           left: 0;
         }
+
         .photo {
           position: absolute;
           top: 0;

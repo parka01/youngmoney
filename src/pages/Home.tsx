@@ -101,7 +101,7 @@ function Home() {
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          <div className="box-glass half col">
+          <div className="half col">
             <div className="selfie">
               <video src="./videos/selfie.mp4" muted loop autoPlay></video>
             </div>

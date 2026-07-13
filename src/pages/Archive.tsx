@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Archive.css';
+import chair from '../assets/images/chair.png'
 
 function Archive() {
   const [scrollAmount, setScrollAmount] = useState(0);
@@ -20,6 +21,9 @@ function Archive() {
           className="wall"
           style={{ transform: `translateX(-${leftMovement}px)` }}
         >
+          <div className='chair'>
+            <img src={chair} alt="chair image" />
+          </div>
           <div className="item">
             <div className="frame-small heart">
               <img
