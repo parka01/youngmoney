@@ -230,10 +230,10 @@ function Home() {
             <a
               href="https://parka01.github.io/brand-portfolio"
               target="_blank"
-              class="btn-view"
+              className="btn-view"
             >
               View BI/BX guide
-              <div class="arrow-button"></div>
+              <div className="arrow-button"></div>
             </a>
           </div>
         </div>
