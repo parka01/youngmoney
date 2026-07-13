@@ -20,6 +20,10 @@
       background: url(../images/wall_mint.png) repeat-x;
       background-size: contain;
 
+      img> {
+        width: 3000px;
+      }
+
       .chair {
         position: fixed;
         width: 25vw;
