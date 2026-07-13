@@ -496,6 +496,22 @@ ul {
       display: block;
     }
   }
+
+  .swiper-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .list-icon {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        width: 23%;
+      }
+    }
+  }
 }
 
 /* -------- SECTION CONTACT -------- */
