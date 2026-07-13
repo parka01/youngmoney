@@ -238,7 +238,7 @@ function Home() {
       {/* ---- SECTION BRAND ---- */}
       <section id="section-brand">
         <div
-          className="brand-identity box-flex"
+          className="brand-identity box-flex top"
           data-aos="fade-right"
           data-aos-duration="3000"
         >

@@ -364,6 +364,10 @@ ul {
     margin-bottom: 200px;
   }
 
+  .brand-identity.top {
+    padding-top: 80px;
+  }
+
   .box-flex {
     border-radius: 20px;
     overflow: clip;
@@ -720,6 +724,10 @@ footer {
     text-align: center;
     width: 110px;
     padding-block: 3px;
+  }
+
+  a:hover {
+    border-bottom: solid 1px re;
   }
 }
 
