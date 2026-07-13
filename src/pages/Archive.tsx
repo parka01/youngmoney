@@ -1,6 +1,13 @@
 import { useEffect, useState } from 'react';
 import './Archive.css';
 import chair from '../assets/images/chair.png'
+import frameRectangle from '../assets/images/frame_gold_rectangle.png'
+import frameRectangle2 from '../assets/images/frame_gold_rectangle_02.png'
+import frameRectangle3 from '../assets/images/frame_gold_rectangle_03.png'
+import frameRectangle4 from '../assets/images/frame_gold_rectangle_04.png'
+
+
+
 
 function Archive() {
   const [scrollAmount, setScrollAmount] = useState(0);
@@ -29,12 +36,12 @@ function Archive() {
               <img
                 className="photo"
                 src="../assets/images/newbtria_portfolio.png"
-                alt=""
+                alt="image"
               />
               <img
                 className="frame"
-                src="../assets/images/frame_gold_rectangle.png"
-                alt=""
+                src={frameRectangle}
+                alt="gold frame image"
               />
             </div>
           </div>
