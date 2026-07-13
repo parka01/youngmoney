@@ -87,6 +87,10 @@
           position: absolute;
           left: 50%;
           top: 5%;
+
+          .photo {
+            object-position: 0 -25px;
+          }
         }
 
         .frame6 {
