@@ -390,18 +390,7 @@ ul {
       }
     }
 
-    .swiper-cardnews {
-      aspect-ratio: 1;
-      overflow: clip;
-      border-radius: 20px;
-      display: flex;
-      margin-bottom: 2rem;
 
-      img {
-        width: 100%;
-        display: block;
-      }
-    }
 
     .swiper-description {
       display: flex;
@@ -490,6 +479,22 @@ ul {
   video {
     width: 100%;
     object-fit: cover;
+  }
+}
+
+/* -------- SECTION CARD NEWS -------- */
+#section-card-news {
+  .swiper-cardnews {
+    aspect-ratio: 1;
+    overflow: clip;
+    border-radius: 20px;
+    display: flex;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      display: block;
+    }
   }
 }
 

@@ -682,7 +682,7 @@ function Home() {
         data-aos="fade-right"
         data-aos-duration="3000"
       >
-        <h1 className="txt-40">Extra Projects</h1>
+        <h1 className="txt-40">Card news</h1>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
