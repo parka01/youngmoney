@@ -47,10 +47,15 @@ z-index: 1;
           }
         }
 
-        .heart {
+        .frame1 {
+          position: absolute;
+          left: 10%;
+          top: 10%;
+        }
+         .frame2 {
           position: absolute;
           left: 20%;
-          top: 10%;
+          top: 12%;
         }
 
         .frame {

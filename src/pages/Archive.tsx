@@ -33,7 +33,7 @@ function Archive() {
         >
 
           <div className="item">
-            <div className="frame-small heart">
+            <div className="frame-small frame1">
               <img
                 className="photo"
                 src="../assets/images/newbtria_portfolio.png"
@@ -42,6 +42,18 @@ function Archive() {
               <img
                 className="frame"
                 src={frameRectangle}
+                alt="gold frame image"
+              />
+            </div>
+            <div className="frame-small frame2">
+              <img
+                className="photo"
+                src="../assets/images/newbtria_portfolio.png"
+                alt="image"
+              />
+              <img
+                className="frame"
+                src={frameRectangle2}
                 alt="gold frame image"
               />
             </div>

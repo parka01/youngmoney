@@ -516,9 +516,15 @@ ul {
   padding: 80px 50px;
   background: linear-gradient(#FFF 0% 1%, #d3a1ff 50%);
   text-align: center;
+  align-items: center;
+
+  p,
+  h2 {
+    margin-block: 10px;
+  }
 
   .box-handwriting {
-    max-width: 700px;
+    width: clamp(400px, calc(300px + 20vw), 700px);
 
     .handwriting {
       width: 100%;
