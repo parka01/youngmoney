@@ -62,7 +62,7 @@ function App() {
         </section>
         <div className="header">
           <h1>
-            <Link to="/home">🦄AHYOUNG's Portfolio💖✨</Link>
+            <Link to="/">🦄AHYOUNG's Portfolio💖✨</Link>
           </h1>
           <ul className="nav-gnb">
             <li>
