@@ -24,13 +24,14 @@ function Archive() {
   return (
     <div id="wrap-archive">
       <div className="box-wall">
+        <div className='chair'>
+          <img src={chair} alt="chair image" />
+        </div>
         <div
           className="wall"
           style={{ transform: `translateX(-${leftMovement}px)` }}
         >
-          <div className='chair'>
-            <img src={chair} alt="chair image" />
-          </div>
+
           <div className="item">
             <div className="frame-small heart">
               <img

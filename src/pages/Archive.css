@@ -21,9 +21,10 @@
       background-size: contain;
 
       .chair {
-        position: absolute;
+        position: fixed;
         width: 25vw;
         left: 30px;
+        bottom: 0;
 
         img {
           display: block;
