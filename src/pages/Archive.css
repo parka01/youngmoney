@@ -15,9 +15,9 @@
 
     .chair {
       position: fixed;
-      width: 25vw;
-      left: 30px;
-      bottom: 0;
+      width: 450px;
+      left: 0px;
+      bottom: 4vh;
       z-index: 1;
 
       img {
@@ -28,11 +28,11 @@
 
     .console {
       position: fixed;
-      width: 25vw;
+      width: 450px;
       left: 50%;
-      bottom: 0;
+      bottom: 11vh;
       z-index: 1;
-      transform: translateX(-50%);
+      transform: translate(-50%);
 
       img {
         display: block;
