@@ -72,6 +72,7 @@ ul {
   background: var(--body-background) repeat;
   background-size: cover;
   color: var(--body-color);
+  margin-bottom: 1rem;
 }
 
 .cursor {

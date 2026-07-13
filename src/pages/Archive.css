@@ -72,6 +72,15 @@
           top: 30%;
         }
 
+        .heart {
+          left: 40%;
+          top: 20%;
+
+          .photo {
+            aspect-ratio: 1;
+          }
+        }
+
         .frame {
           position: absolute;
           top: 0;
@@ -82,6 +91,9 @@
           position: absolute;
           top: 0;
           left: 0;
+          object-fit: cover;
+          padding: 20px;
+          aspect-ratio: 4 / 3;
         }
       }
     }

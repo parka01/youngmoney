@@ -5,6 +5,7 @@ import frameRectangle from '../assets/images/frame_gold_rectangle.png'
 import frameRectangle2 from '../assets/images/frame_gold_rectangle_02.png'
 import frameRectangle3 from '../assets/images/frame_gold_rectangle_03.png'
 import frameRectangle4 from '../assets/images/frame_gold_rectangle_04.png'
+import frameHeart from '../assets/images/frame_gold_heart.png'
 import img1 from '../assets/images/scholarship.jpg'
 import img2 from '../assets/images/artwork.jpg'
 import img3 from '../assets/images/presentation.jpg'
@@ -83,6 +84,18 @@ function Archive() {
               <img
                 className="frame"
                 src={frameRectangle4}
+                alt="gold frame image"
+              />
+            </div>
+            <div className="frame-small heart">
+              <img
+                className="photo"
+                src={img4}
+                alt="image"
+              />
+              <img
+                className="frame" 
+                src={frameHeart}
                 alt="gold frame image"
               />
             </div>
