@@ -6,7 +6,6 @@
   position: relative;
 
   .box-wall {
-    border: solid 10px red;
     width: 100vw;
     height: calc(100vh - 100px);
     position: fixed;

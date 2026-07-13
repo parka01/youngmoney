@@ -62,19 +62,23 @@ function App() {
         </section>
         <div className="header">
           <h1>
-            <Link to="/">🦄AHYOUNG's Portfolio💖✨</Link>
+            <Link to="/home">🦄AHYOUNG's Portfolio💖✨</Link>
           </h1>
           <ul className="nav-gnb">
             <li>
-              <NavHashLink smooth to="/#about">
+              <NavHashLink smooth to="/#section-about">
                 About
               </NavHashLink>
             </li>
             <li>
-              <a href="#">Work</a>
+              <NavHashLink smooth to="/#section-brand">
+                Work
+              </NavHashLink>
             </li>
             <li>
-              <a href="#">Contacts</a>
+            <NavHashLink smooth to="/#section-contact">
+                Contact
+              </NavHashLink>
             </li>
             <Link to="/archive">Archive</Link>
           </ul>
