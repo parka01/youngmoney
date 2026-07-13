@@ -24,12 +24,12 @@ function Archive() {
             <div className="frame-small heart">
               <img
                 className="photo"
-                src="../src/images/newbtria_portfolio.png"
+                src="../assets/images/newbtria_portfolio.png"
                 alt=""
               />
               <img
                 className="frame"
-                src="../src/images/frame_gold_rectangle.png"
+                src="../assets/images/frame_gold_rectangle.png"
                 alt=""
               />
             </div>
