@@ -329,7 +329,7 @@ function Home() {
         data-aos="fade-right"
         data-aos-duration="3000"
       >
-        <h1 className="txt-40">Extra Projects</h1>
+        <h1 className="txt-40">Extra projects</h1>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -489,7 +489,7 @@ function Home() {
         data-aos="fade-right"
         data-aos-duration="3000"
       >
-        <h1 className="txt-40">Video Works</h1>
+        <h1 className="txt-40">Video works</h1>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -699,7 +699,7 @@ function Home() {
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 4,
               spaceBetween: 50,
             },
           }}
