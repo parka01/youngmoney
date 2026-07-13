@@ -11,6 +11,7 @@ import img2 from '../assets/images/artwork.jpg'
 import img3 from '../assets/images/presentation.jpg'
 import img4 from '../assets/images/intern.jpg'
 import main from '../assets/images/main.jpg'
+import main2 from '../assets/images/main2.png'
 
 
 
@@ -102,7 +103,7 @@ function Archive() {
             <div className="frame-small frame5">
               <img
                 className="photo"
-                src={img3}
+                src={main2}
                 alt="image"
               />
               <img
