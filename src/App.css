@@ -72,7 +72,6 @@ ul {
   background: var(--body-background) repeat;
   background-size: cover;
   color: var(--body-color);
-  padding-bottom: 10rem;
 }
 
 .cursor {
@@ -556,6 +555,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-block: 2rem;
 }
 
 /* -------- COMPONENT CSS -------- */
