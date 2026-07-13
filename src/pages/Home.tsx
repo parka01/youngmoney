@@ -120,7 +120,7 @@ function Home() {
           <div className="box-glass half col">
             <ul>
               <li className="list-history">
-                <div className="date">2026.07.13</div>
+                <div className="date">2026.07</div>
                 <div className="detail-info">
                   <div className="history">나래디자인학원 수료</div>
                   <div className="description">
@@ -130,7 +130,7 @@ function Home() {
               </li>
               <div className="line-break"></div>
               <li className="list-history">
-                <div className="date">2026.07.03</div>
+                <div className="date">2026.07</div>
                 <div className="detail-info">
                   <div className="history">웹디자인개발기능사 취득</div>
                   <ul className="list-icon">
@@ -160,7 +160,7 @@ function Home() {
               </li>
               <div className="line-break"></div>
               <li className="list-history">
-                <div className="date">2026.06.26</div>
+                <div className="date">2026.06</div>
                 <div className="detail-info">
                   <div className="history">컴퓨터그래픽기능사 취득</div>
                   <ul className="list-icon">
@@ -178,6 +178,27 @@ function Home() {
                     Adobe Photoshop과 Illustrator, InDesign을 활용한 그래픽 제작
                     역량을 갖추었으며, 이를 바탕으로 사용성과 심미성을 모두
                     고려한 UI를 구현합니다.
+                  </div>
+                </div>
+              </li>
+              <div className="line-break"></div>
+               <li className="list-history">
+                <div className="date">2024.06</div>
+                <div className="detail-info">
+                  <div className="history">SQL 개발자</div>
+                  <ul className="list-icon">
+                    <li>
+                      <img src={inDesignIcon} alt="indesign icon" />
+                    </li>
+                    <li>
+                      <img src={illustratorIcon} alt="illustrator icon image" />
+                    </li>
+                    <li>
+                      <img src={photoshopIcon} alt="photoshop icon image" />
+                    </li>
+                  </ul>
+                  <div className="description">
+                   데이터 가공에 대한 기본적인 이해가 있으며 이를 화면에 시각적으로 구현할 수 있습니다.
                   </div>
                 </div>
               </li>
