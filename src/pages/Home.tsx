@@ -878,9 +878,91 @@ function Home() {
               </div>
             </div>
           </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews12} alt="card news image 12" />
+              </div>
+              <div className="swiper-description">
+                <div>
+                  <h3>
+                    딥페이크
+                  </h3>
+                  <p>디지털배움터 딥페이크 카드뉴스 제작</p>
+                </div>
+                <ul className="list-icon">
+                  <li>
+                    <img src={illustratorIcon} alt="illustrator icon image" />
+                  </li>
+                  <li>
+                    <img src={photoshopIcon} alt="photoshop icon image" />
+                  </li>
+                  <li>
+                    <img src={chatGPTIcon} alt="chatgpt icon image" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews13} alt="card news image 13" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews14} alt="card news image 14" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews15} alt="card news image 15" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews16} alt="card news image 16" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews17} alt="card news image 17" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </section>
-
 
       <section id="section-contact">
         <p>LET’S BUILD SOMETHING GREAT</p>
