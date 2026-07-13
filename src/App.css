@@ -184,9 +184,9 @@ ul {
   margin-left: 10px;
 }
 
-.arrow-button:hover {
+.media-info a:hover .arrow-button {
   transition: all 0.5s;
-  transform: translateX(5px);
+  transform: translateX(10px);
 }
 
 /* -------- KEYFRAMES CSS -------- */
