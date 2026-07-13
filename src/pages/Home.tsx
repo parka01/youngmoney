@@ -94,7 +94,7 @@ function Home() {
       {/* ---- SECTION ABOUT ---- */}
       <section id="section-about">
         <span className="title">
-          "감성과 경험을 연결하는 웹퍼블리셔 박아영입니다."
+          "감성과 경험을 연결하는 웹 퍼블리셔 박아영입니다."
         </span>
         <div
           className="box-flex center"
