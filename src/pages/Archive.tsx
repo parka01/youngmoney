@@ -5,6 +5,11 @@ import frameRectangle from '../assets/images/frame_gold_rectangle.png'
 import frameRectangle2 from '../assets/images/frame_gold_rectangle_02.png'
 import frameRectangle3 from '../assets/images/frame_gold_rectangle_03.png'
 import frameRectangle4 from '../assets/images/frame_gold_rectangle_04.png'
+import img1 from '../assets/images/scholarship.jpg'
+import img2 from '../assets/images/artwork.jpg'
+import img3 from '../assets/images/presentation.jpg'
+import img4 from '../assets/images/intern.jpg'
+
 
 
 
@@ -36,7 +41,7 @@ function Archive() {
             <div className="frame-small frame1">
               <img
                 className="photo"
-                src="../assets/images/newbtria_portfolio.png"
+                src={img1}
                 alt="image"
               />
               <img
@@ -48,7 +53,7 @@ function Archive() {
             <div className="frame-small frame2">
               <img
                 className="photo"
-                src="../assets/images/newbtria_portfolio.png"
+                src={img2}
                 alt="image"
               />
               <img
@@ -60,7 +65,7 @@ function Archive() {
             <div className="frame-small frame3">
               <img
                 className="photo"
-                src="../assets/images/newbtria_portfolio.png"
+                src={img3}
                 alt="image"
               />
               <img
@@ -72,7 +77,7 @@ function Archive() {
             <div className="frame-small frame4">
               <img
                 className="photo"
-                src="../assets/images/newbtria_portfolio.png"
+                src={img4}
                 alt="image"
               />
               <img
