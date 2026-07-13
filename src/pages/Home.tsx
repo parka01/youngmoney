@@ -691,6 +691,14 @@ function Home() {
           Contact
         </a>
       </section>
+      <footer>
+        <div className='copyright'>
+          Copyright © Ahyoung Park 2026 All rights reserved
+        </div>
+        <div>
+          여러분의 상상을 구현해 드립니다.
+        </div>
+      </footer>
     </>
   );
 }

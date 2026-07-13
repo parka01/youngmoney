@@ -548,6 +548,13 @@ ul {
   }
 }
 
+/* -------- FOOTER -------- */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* -------- COMPONENT CSS -------- */
 .box-flex {
   display: flex;
