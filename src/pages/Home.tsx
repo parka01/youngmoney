@@ -182,7 +182,7 @@ function Home() {
                 </div>
               </li>
               <div className="line-break"></div>
-               <li className="list-history">
+              <li className="list-history">
                 <div className="date">2024.06</div>
                 <div className="detail-info">
                   <div className="history">SQL 개발자</div>
@@ -198,7 +198,7 @@ function Home() {
                     </li>
                   </ul>
                   <div className="description">
-                   데이터 가공에 대한 기본적인 이해가 있으며 이를 화면에 시각적으로 구현할 수 있습니다.
+                    데이터 가공에 대한 기본적인 이해가 있으며 이를 화면에 시각적으로 구현할 수 있습니다.
                   </div>
                 </div>
               </li>
@@ -700,7 +700,7 @@ function Home() {
             </svg>
           </div>
           <a href="mailto:for.unique.fashion@gmail.com" className="btn-contact">
-           Contact
+            Contact
           </a>
         </div>
       </section>

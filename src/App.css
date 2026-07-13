@@ -216,6 +216,20 @@ ul {
   }
 }
 
+@keyframes write {
+  0% {
+    stroke-dashoffset: 3026.421875;
+  }
+
+  80% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 .wrap_top:hover .top_text_motion {
   animation-play-state: paused;
 }
@@ -505,8 +519,11 @@ ul {
 
   .box-handwriting {
     max-width: 700px;
-    .handwriting{
+
+    .handwriting {
       width: 100%;
+      stroke-dasharray: 3026.421875;
+      animation: write 12s infinite linear;
     }
   }
 
