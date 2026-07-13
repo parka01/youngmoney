@@ -526,6 +526,7 @@ ul {
 
   .box-handwriting {
     width: clamp(400px, calc(300px + 20vw), 700px);
+    margin-block: 3rem;
 
     .handwriting {
       width: 100%;
@@ -540,11 +541,13 @@ ul {
     padding: 10px 40px;
     background: #Fff;
     border-radius: 40px;
+    transition: all 1s;
   }
 
   .btn-contact:hover {
     box-shadow: 5px 5px 5px #00000054;
     transform: translate(-10px, -10px);
+    transition: all 1s;
   }
 }
 
