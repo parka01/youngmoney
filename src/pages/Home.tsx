@@ -245,7 +245,7 @@ function Home() {
           <div className="box-flex media">
             <video src="./videos/media_pacade.mp4" autoPlay muted loop></video>
           </div>
-          <div className="box-flex col media-info">
+          <div className="box-flex box-glass col media-info">
             <div>BI/BX guide</div>
             <h1>화장품 브랜드 'newB.tria'</h1>
             <p>
@@ -260,7 +260,7 @@ function Home() {
               className="btn-view"
             >
               View BI/BX guide
-              <div className="arrow-button"></div>
+              <span className="arrow-button">→</span>
             </a>
           </div>
         </div>
@@ -269,7 +269,7 @@ function Home() {
           data-aos="fade-left"
           data-aos-duration="3000"
         >
-          <div className="box-flex col media-info">
+          <div className="box-flex box-glass col media-info">
             <div>
               <span className="label-blue">반응형</span>Website
             </div>
@@ -289,7 +289,7 @@ function Home() {
               className="btn-view"
             >
               View WEB site
-              <div className="arrow-button"></div>
+              <span className="arrow-button">→</span>
             </a>
           </div>
           <div className="box-flex media">
@@ -304,7 +304,7 @@ function Home() {
           <div className="box-flex media">
             <video src="./videos/daffodil.mp4" autoPlay muted loop></video>
           </div>
-          <div className="box-flex col media-info">
+          <div className="box-flex box-glass col media-info">
             <div>Web guide</div>
             <h1>화장품 브랜드 'newB.tria'</h1>
             <p>
@@ -317,7 +317,7 @@ function Home() {
               className="btn-view"
             >
               View WEB guide
-              <div className="arrow-button"></div>
+              <span className="arrow-button">→</span>
             </a>
           </div>
         </div>
@@ -915,7 +915,6 @@ function Home() {
           Contact
         </a>
       </section>
-
 
       <footer>
         <div className='copyright'>
