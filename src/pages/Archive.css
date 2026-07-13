@@ -51,31 +51,31 @@
         .frame1 {
           position: absolute;
           left: 10%;
-          top: 10%;
+          top: 7%;
         }
 
         .frame2 {
           position: absolute;
           left: 20%;
-          top: 20%;
+          top: 17%;
         }
 
         .frame3 {
           position: absolute;
           left: 30%;
-          top: 5%;
+          top: 2%;
         }
 
         .frame4 {
           position: absolute;
           left: 30%;
-          top: 30%;
+          top: 27%;
         }
 
         .heart {
           position: absolute;
           left: 40%;
-          top: 20%;
+          top: 17%;
 
           .photo {
             aspect-ratio: 1 / 0.9;
@@ -86,7 +86,7 @@
         .frame5 {
           position: absolute;
           left: 50%;
-          top: 5%;
+          top: 2%;
 
           .photo {
             object-position: 0 -25px;
@@ -96,12 +96,11 @@
         .frame6 {
           position: absolute;
           left: 50%;
-          top: 30%;
+          top: 27%;
         }
 
-
-
         .frame {
+          filter: saturate(0.8);
           position: absolute;
           top: 0;
           left: 0;
