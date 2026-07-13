@@ -186,17 +186,6 @@ function Home() {
                 <div className="date">2024.06</div>
                 <div className="detail-info">
                   <div className="history">SQL 개발자</div>
-                  <ul className="list-icon">
-                    <li>
-                      <img src={inDesignIcon} alt="indesign icon" />
-                    </li>
-                    <li>
-                      <img src={illustratorIcon} alt="illustrator icon image" />
-                    </li>
-                    <li>
-                      <img src={photoshopIcon} alt="photoshop icon image" />
-                    </li>
-                  </ul>
                   <div className="description">
                     데이터 가공에 대한 기본적인 이해가 있으며 이를 화면에 시각적으로 구현할 수 있습니다.
                   </div>

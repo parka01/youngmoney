@@ -327,10 +327,11 @@ ul {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    display: inline;
+    display: block;
     font-size: 32px;
     margin: 50px 0 100px 0;
     font-weight: bolder;
+    text-align: center;
   }
 
   .list-history {
@@ -514,7 +515,7 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 80px 50px;
-  background: linear-gradient(#FFF 0% 1%, #d3a1ff 50%);
+  background: linear-gradient(#ffffffba 0% 1%, #d3a1ffb3 50%);
   text-align: center;
   align-items: center;
 

@@ -57,6 +57,30 @@ function Archive() {
                 alt="gold frame image"
               />
             </div>
+            <div className="frame-small frame3">
+              <img
+                className="photo"
+                src="../assets/images/newbtria_portfolio.png"
+                alt="image"
+              />
+              <img
+                className="frame"
+                src={frameRectangle3}
+                alt="gold frame image"
+              />
+            </div>
+            <div className="frame-small frame4">
+              <img
+                className="photo"
+                src="../assets/images/newbtria_portfolio.png"
+                alt="image"
+              />
+              <img
+                className="frame"
+                src={frameRectangle4}
+                alt="gold frame image"
+              />
+            </div>
           </div>
           {/* <img src="../src/images/wall_mint.png" alt="mint wall image" /> */}
         </div>
