@@ -83,6 +83,20 @@
           }
         }
 
+        .frame5 {
+          position: absolute;
+          left: 50%;
+          top: 30%;
+        }
+
+        .frame6 {
+          position: absolute;
+          left: 50%;
+          top: 30%;
+        }
+
+
+
         .frame {
           position: absolute;
           top: 0;

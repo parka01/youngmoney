@@ -10,7 +10,7 @@ import img1 from '../assets/images/scholarship.jpg'
 import img2 from '../assets/images/artwork.jpg'
 import img3 from '../assets/images/presentation.jpg'
 import img4 from '../assets/images/intern.jpg'
-
+import main from '../assets/images/main.jpg'
 
 
 
@@ -90,12 +90,36 @@ function Archive() {
             <div className="frame-small heart">
               <img
                 className="photo"
+                src={main}
+                alt="image"
+              />
+              <img
+                className="frame"
+                src={frameHeart}
+                alt="gold frame image"
+              />
+            </div>
+            <div className="frame-small frame5">
+              <img
+                className="photo"
+                src={img3}
+                alt="image"
+              />
+              <img
+                className="frame"
+                src={frameRectangle3}
+                alt="gold frame image"
+              />
+            </div>
+            <div className="frame-small frame6">
+              <img
+                className="photo"
                 src={img4}
                 alt="image"
               />
               <img
-                className="frame" 
-                src={frameHeart}
+                className="frame"
+                src={frameRectangle4}
                 alt="gold frame image"
               />
             </div>
