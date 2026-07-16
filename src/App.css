@@ -363,6 +363,7 @@ ul {
   .brand-identity {
     margin-bottom: 200px;
     padding-block: 2rem;
+    padding-right: 20px;
   }
 
   .brand-identity.top {
@@ -745,10 +746,6 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
-  .chair {
-    display: none;
-  }
-
   div .box-flex {
     flex-direction: column;
     padding-inline: 20px;
