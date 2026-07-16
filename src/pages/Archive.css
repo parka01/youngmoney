@@ -58,10 +58,24 @@
         .frame-small {
           width: 200px;
           filter: drop-shadow(3px 3px 5px #00000088);
+          justify-items: center;
 
           img {
             display: block;
             width: 100%;
+          }
+
+          .wrap-frame {
+            height: 150px;
+          }
+
+          .photo-description {
+            background: #FFF;
+            width: 40%;
+            font-size: 8px;
+            padding: 2px 3px;
+            position: relative;
+            top: 0.5rem;
           }
         }
 
@@ -137,6 +151,10 @@
 }
 
 @media screen and (max-width:800px) {
+  #wrap-archive {
+    height: 4200px;
+  }
+
   .chair {
     display: none;
   }

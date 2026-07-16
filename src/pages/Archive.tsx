@@ -44,7 +44,7 @@ function Archive() {
         >
           <div className="item">
             <div className="frame-small frame1">
-              <div>
+              <div className='wrap-frame'>
                 <img
                   className="photo"
                   src={img1}
@@ -57,44 +57,63 @@ function Archive() {
                 />
               </div>
               <div className='photo-description'>
-장학금 수여 
+                Eleanor Blackburn장학금
               </div>
             </div>
             <div className="frame-small frame2">
-              <img
-                className="photo"
-                src={img2}
-                alt="image"
-              />
-              <img
-                className="frame"
-                src={frameRectangle2}
-                alt="gold frame image"
-              />
+              <div className='wrap-frame'>
+                <img
+                  className="photo"
+                  src={img2}
+                  alt="image"
+                />
+                <img
+                  className="frame"
+                  src={frameRectangle2}
+                  alt="gold frame image"
+                />
+              </div>
+              <div className='photo-description'>
+                액세서리 디자인 작품
+                <br />2016
+              </div>
             </div>
+
             <div className="frame-small frame3">
-              <img
-                className="photo"
-                src={img3}
-                alt="image"
-              />
-              <img
-                className="frame"
-                src={frameRectangle3}
-                alt="gold frame image"
-              />
+              <div className='wrap-frame'>
+                <img
+                  className="photo"
+                  src={img3}
+                  alt="image"
+                />
+                <img
+                  className="frame"
+                  src={frameRectangle3}
+                  alt="gold frame image"
+                />
+              </div>
+              <div className='photo-description'>
+                수업중 발표시간
+                <br />2016
+              </div>
             </div>
             <div className="frame-small frame4">
-              <img
-                className="photo"
-                src={img4}
-                alt="image"
-              />
-              <img
-                className="frame"
-                src={frameRectangle4}
-                alt="gold frame image"
-              />
+              <div className='wrap-frame'>
+                <img
+                  className="photo"
+                  src={img4}
+                  alt="image"
+                />
+                <img
+                  className="frame"
+                  src={frameRectangle4}
+                  alt="gold frame image"
+                />
+              </div>
+              <div className='photo-description'>
+                인턴 마지막날
+                <br />2015
+              </div>
             </div>
             <div className="frame-small heart">
               <img
@@ -109,16 +128,22 @@ function Archive() {
               />
             </div>
             <div className="frame-small frame5">
-              <img
-                className="photo"
-                src={main2}
-                alt="image"
-              />
-              <img
-                className="frame"
-                src={frameRectangle3}
-                alt="gold frame image"
-              />
+              <div className='wrap-frame'>
+                <img
+                  className="photo"
+                  src={main2}
+                  alt="image"
+                />
+                <img
+                  className="frame"
+                  src={frameRectangle3}
+                  alt="gold frame image"
+                />
+              </div>
+              <div className='photo-description'>
+                강사 활동 모습
+                <br />2024
+              </div>
             </div>
             <div className="frame-small frame6">
               <img

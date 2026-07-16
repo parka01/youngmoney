@@ -5,10 +5,8 @@ import { NavHashLink } from 'react-router-hash-link';
 
 function App() {
   const cursorRef = useRef<HTMLDivElement>(null);
-  
+
   useEffect(() => {
-    console.log('useEffect running');
-    console.log(cursorRef.current);
     const cursor = cursorRef.current;
 
     if (!cursor) return;
@@ -46,6 +44,11 @@ function App() {
 
   return (
     <main id="wrap-main">
+      <div className='background-lava'>
+        <div className='blop'>
+
+        </div>
+      </div>
       <header id="wrap-header">
         <section id="wrap-top">
           <div className="top-text-motion">
@@ -77,7 +80,7 @@ function App() {
               </NavHashLink>
             </li>
             <li>
-            <NavHashLink smooth to="/#section-contact">
+              <NavHashLink smooth to="/#section-contact">
                 Contact
               </NavHashLink>
             </li>

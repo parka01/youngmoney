@@ -1,6 +1,7 @@
 /* global style css */
 :root {
-  --body-background: url(./assets/images/bg_dreamy_pink.png) no-repeat;
+  /* --body-background: url(./assets/images/bg_dreamy_pink.png) no-repeat; */
+  --body-background: #FFF;
   /* --body-background: url(../public/images/bg_dreamy_pink.png) no-repeat; */
   /* public/images */
   --body-color: #0a093f;

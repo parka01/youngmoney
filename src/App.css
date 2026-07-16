@@ -123,6 +123,133 @@ ul {
   transition: 0.5s;
 }
 
+
+@keyframes blop-move {
+  0% {
+    scale: 1;
+    translate: 0px 0px;
+    transform-origin: center;
+    content: "1";
+  }
+
+  5% {
+    scale: 1 1.1;
+    translate: 0px -250px;
+    transform-origin: center;
+    content: "2";
+  }
+
+  18% {
+    scale: 1 1.1;
+    translate: 0px -10px;
+    transform-origin: center;
+    content: "3";
+  }
+
+  20% {
+    scale: 1.25 1;
+    translate: 0px 0px;
+    transform-origin: center;
+    content: "4";
+  }
+
+  30% {
+    scale: 1 1.2;
+    translate: 0px -180px;
+    transform-origin: center;
+    content: "5";
+  }
+
+40% {
+    scale: 1.1 1.1;
+    translate: 0px 0px;
+    transform-origin: center;
+    content: "6";
+  }
+
+  40% {
+    scale: 1 1.1;
+    translate: 0px -80px;
+    transform-origin: center;
+    content: "7";
+  }
+
+  50% {
+    scale: 1 1;
+    translate: 0px 0px;
+    content: "8";
+  }
+
+  60% {
+    scale: 1 1;
+    translate: 0px 0px;
+    content: "9";
+  }
+
+  70% {
+    scale: 1 1;
+
+    translate: 0px -30px;
+    content: "10";
+  }
+
+  80% {
+    content: "11";
+    scale: 1 1;
+    translate: 0px 0px;
+  }
+
+  90% {
+    content: "12";
+    scale: 1 1;
+    translate: 0px -20px;
+  }
+
+  98% {
+    content: "13";
+    scale: 1 1;
+    translate: 0px 0px;
+  }
+
+  100% {
+    content: "14";
+    scale: 1 1;
+    translate: 0px 0px;
+  }
+
+}
+
+
+/* -------- BLOP BACKGROUND CSS */
+.background-lava {
+  background-color: yellow;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 20;
+
+  .blop::before {
+    content: "1";
+    animation: blop-move 10s infinite;
+  }
+
+  .blop {
+
+    font-size: 30px;
+    transform-origin: center;
+    left: 40%;
+    top: 40%;
+    background: plum;
+    border-radius: 50% 50% 50% 50%;
+    width: clamp(150px, calc(150px + 12vw), 500px);
+    height: clamp(150px, calc(150px + 12vw), 500px);
+    animation: blop-move 10s infinite;
+    position: fixed;
+  }
+}
+
+
 /* -------- COMPONENT CSS -------- */
 
 .header {
@@ -148,12 +275,49 @@ ul {
   }
 }
 
+.box-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.half {
+  width: 48%;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.box-glass {
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px;
+  border: solid 2px #ffffff9c;
+  border-radius: 30px;
+  background-color: #ffffff2f;
+  backdrop-filter: blur(2px);
+  box-shadow:
+    -5px 0 0px 0px #ffffffbc inset,
+    8px 8px 20px #00000038;
+}
+
 .line-break {
   display: flex;
   width: 100%;
   height: 2px;
   background-color: #ffffff6f;
   margin-block: 10px;
+}
+
+.label-blue {
+  border: solid 1px dodgerblue;
+  font-size: 15px;
+  padding: 2px 5px;
+  color: dodgerblue;
+  background: #e5f1fd;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 .txt-40 {
@@ -182,10 +346,11 @@ ul {
   padding: 2px 10px;
   border-radius: 60px;
   margin-left: 10px;
+  display: inline-block;
 }
 
 .media-info a:hover .arrow-button {
-  transition: all 0.5s;
+  transition: all 1s;
   transform: translateX(10px);
 }
 
@@ -598,34 +763,7 @@ footer {
   padding-inline: 30px;
 }
 
-/* -------- COMPONENT CSS -------- */
-.box-flex {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.half {
-  width: 48%;
-}
-
-.col {
-  flex-direction: column;
-}
-
-.box-glass {
-  display: flex;
-  box-sizing: border-box;
-  padding: 20px;
-  border: solid 2px #ffffff9c;
-  border-radius: 30px;
-  background-color: #ffffff2f;
-  backdrop-filter: blur(2px);
-  box-shadow:
-    -5px 0 0px 0px #ffffffbc inset,
-    8px 8px 20px #00000038;
-}
-
+/* -------- CONTENT CSS -------- */
 .list-portfolio {
   width: 50%;
   display: flex;
@@ -650,7 +788,6 @@ footer {
   backdrop-filter: blur(0);
   /* transform: rotateY(360deg); */
   transition: transform 1s;
-  mix-blend-mode: overlay;
 }
 
 .box-glass2 {
@@ -682,7 +819,6 @@ footer {
     linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-
   filter: blur(20px);
 }
 
@@ -703,16 +839,6 @@ footer {
     display: block;
     object-fit: cover;
   }
-}
-
-.label-blue {
-  border: solid 1px dodgerblue;
-  font-size: 15px;
-  padding: 2px 5px;
-  color: dodgerblue;
-  background: #e5f1fd;
-  border-radius: 5px;
-  margin-right: 10px;
 }
 
 /* -------- NAV CSS -------- */
