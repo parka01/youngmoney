@@ -44,16 +44,21 @@ function Archive() {
         >
           <div className="item">
             <div className="frame-small frame1">
-              <img
-                className="photo"
-                src={img1}
-                alt="image"
-              />
-              <img
-                className="frame"
-                src={frameRectangle}
-                alt="gold frame image"
-              />
+              <div>
+                <img
+                  className="photo"
+                  src={img1}
+                  alt="image"
+                />
+                <img
+                  className="frame"
+                  src={frameRectangle}
+                  alt="gold frame image"
+                />
+              </div>
+              <div className='photo-description'>
+장학금 수여 
+              </div>
             </div>
             <div className="frame-small frame2">
               <img

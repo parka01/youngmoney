@@ -20,6 +20,7 @@ import meterWhite from '../assets/images/meter_white.png';
 import cardNews1 from '../assets/images/card_news_01.png'
 import cardNews2 from '../assets/images/card_news_02.png'
 import cardNews3 from '../assets/images/card_news_03.png'
+import cardNews31 from '../assets/images/card_news_0301.png'
 import cardNews4 from '../assets/images/card_news_04.png'
 import cardNews5 from '../assets/images/card_news_05.png'
 import cardNews6 from '../assets/images/card_news_06.png'
@@ -751,6 +752,17 @@ function Home() {
                 className="swiper-cardnews"
               >
                 <img src={cardNews3} alt="card news image 3" />
+              </div>
+              <div className="swiper-description">
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-item">
+              <div
+                className="swiper-cardnews"
+              >
+                <img src={cardNews31} alt="card news image 31" />
               </div>
               <div className="swiper-description">
               </div>

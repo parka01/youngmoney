@@ -5,6 +5,7 @@ import { NavHashLink } from 'react-router-hash-link';
 
 function App() {
   const cursorRef = useRef<HTMLDivElement>(null);
+  
   useEffect(() => {
     console.log('useEffect running');
     console.log(cursorRef.current);
