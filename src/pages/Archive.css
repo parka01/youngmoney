@@ -136,7 +136,7 @@
   }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:800px) {
   .chair {
     display: none;
   }
