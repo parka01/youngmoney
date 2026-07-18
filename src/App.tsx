@@ -41,13 +41,13 @@ function App() {
       });
     };
   }, []);
-
   return (
     <main id="wrap-main">
-      <div className='background-lava'>
-        <div className='blop'>
-
-        </div>
+      <div className="background-lava">
+        <div className="blop plum"></div>
+        <div className="blop green"></div>
+        <div className="blop blue"></div>
+        <div className="blop lemon"></div>
       </div>
       <header id="wrap-header">
         <section id="wrap-top">
