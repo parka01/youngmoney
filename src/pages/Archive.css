@@ -15,9 +15,9 @@
 
     .chair {
       position: fixed;
-      width: 450px;
+      width: 350px;
       left: 0px;
-      bottom: 4vh;
+      bottom: 0;
       z-index: 1;
       filter: drop-shadow(10px 0 6px #00000066);
 
@@ -30,10 +30,9 @@
     .console {
       position: fixed;
       width: 550px;
-      left: 50%;
+      left: 450px;
       bottom: 11vh;
       z-index: 1;
-      transform: translate(-50%);
       filter: drop-shadow(10px 0 6px #00000066);
 
       img {
@@ -45,14 +44,12 @@
     .wall {
       width: 3300px;
       height: 100%;
-      background: url(../assets/images/wall_mint.png) repeat-x;
+      background: url(../assets/images/wall_mint.png) repeat-x bottom -30px left;
       background-size: cover;
 
-      img> {
+      img > {
         width: 3000px;
       }
-
-
 
       .item {
         .frame-small {
@@ -70,7 +67,7 @@
           }
 
           .photo-description {
-            background: #FFF;
+            background: #fff;
             width: 40%;
             font-size: 8px;
             padding: 2px 3px;
@@ -150,7 +147,7 @@
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   #wrap-archive {
     height: 4200px;
   }
@@ -160,6 +157,8 @@
   }
 
   #wrap-archive .box-wall .console {
+    left: 50%;
+    transform: translateX(-50%);
     width: 95vw;
   }
 }

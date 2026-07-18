@@ -15,10 +15,6 @@ ul {
   box-sizing: border-box;
 }
 
-/* :root {
-  background: var(--body-background);
-} */
-
 .theme-light {
   --primary-color: #fff;
   --secondary-color: #fff;
@@ -31,11 +27,6 @@ ul {
   --secondary-color: #fff;
   --font-color: #cae3fb;
   --bg-color: #384861;
-}
-
-.App-header {
-  background-color: var(--body-background);
-  color: var(--body-color);
 }
 
 #wrap-main {

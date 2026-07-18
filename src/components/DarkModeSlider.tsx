@@ -2,19 +2,19 @@ import React from 'react';
 
 const DarkModeSlider = () => {
   const setDarkMode = () => {
-    document.querySelector('#wrap-main')?.setAttribute('data-theme', 'dark');
+    document.querySelector('#wrap-main')?.setAttribute('page-theme', 'dark');
     localStorage.setItem('selectedTheme', 'dark');
-    console.log('set dark mode');
   };
   const setLightMode = () => {
-    document.querySelector('#wrap-main')?.setAttribute('data-theme', 'light');
+    document.querySelector('#wrap-main')?.setAttribute('page-theme', 'light');
     localStorage.setItem('selectedTheme', 'light');
-    console.log('set light mode');
   };
   const selectedTheme = localStorage.getItem('selectedTheme');
 
   if (selectedTheme === 'dark') {
     setDarkMode();
+  } else {
+    setLightMode;
   }
 
   const toggleTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
