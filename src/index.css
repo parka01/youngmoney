@@ -6,12 +6,16 @@
   /* public/images */
   --body-color: #0a093f;
   --link-color: dodgerblue;
+  --glass-background: #c1daff2f;
+  --glass-border: #b8d4ff86;
 }
 
 [page-theme='dark'] {
   --body-background: url(./assets/images/bg_dark_galaxy.png) no-repeat;
   --body-color: #cae3fb;
   --link-color: cyan;
+  --glass-background: #ffffff2f;
+  --glass-border: #ffffff9c;
 }
 
 * {

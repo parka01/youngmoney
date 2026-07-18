@@ -338,9 +338,9 @@ ul {
   display: flex;
   box-sizing: border-box;
   padding: 20px;
-  border: solid 2px #ffffff9c;
+  border: solid 2px var(--glass-border);
   border-radius: 30px;
-  background-color: #ffffff2f;
+  background-color: var(--glass-background);
   backdrop-filter: blur(2px);
   box-shadow:
     -5px 0 0px 0px #ffffffbc inset,
