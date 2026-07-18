@@ -309,10 +309,10 @@ ul {
 
   h1 {
     box-sizing: border-box;
-    background-color: #ffffff48;
+    background: var(--glass-background);
     border-radius: 25px;
     font-size: 15px;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
     width: 270px;
     align-content: center;
@@ -340,7 +340,7 @@ ul {
   padding: 20px;
   border: solid 2px var(--glass-border);
   border-radius: 30px;
-  background-color: var(--glass-background);
+  background: var(--glass-background);
   backdrop-filter: blur(2px);
   box-shadow:
     -5px 0 0px 0px #ffffffbc inset,
@@ -888,13 +888,14 @@ footer {
 .nav-gnb {
   display: flex;
   border-radius: 30px;
-  background: #ffffff48;
+  background: var(--glass-background);
 
   a {
     display: block;
     text-align: center;
     width: 110px;
-    padding-block: 3px;
+    padding-block: 5px;
+    font-weight: bold;
   }
 
   a:hover {
